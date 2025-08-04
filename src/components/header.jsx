@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { FaBars,FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,9 @@ const Header = () => {
                 <nav className="hidden md:flex space-x-8 font-semibold text-indigo-600">
                     <a href="#features" className="hover:text-indigo-800">Features</a>
                     <a href="#about" className="hover:text-indigo-800">About</a>
-                    <a href="#login" className="bg-indigo-600 text-white px-5 py-2 rounded-md shadow-md hover:bg-indigo-700 transition">Login Admin</a>
+                    <Link to="/login" className="bg-indigo-600 text-white px-5 py-2 mt-2 rounded-md shadow-md hover:bg-indigo-700 transition text-center">
+                    Login Admin
+                    </Link>
                 </nav>
                 
                 {/* Tombol untuk Mobile */}
@@ -32,7 +35,9 @@ const Header = () => {
                     <nav className="flex flex-col space-y-2 px-6 py-4 font-semibold text-indigo-600">
                         <a href="#features" className="hover:text-indigo-800 transition py-2">Features</a>
                         <a href="#about" className="hover:text-indigo-800 transition py-2">About</a>
-                        <a href="#login" className="bg-indigo-600 text-white px-5 py-2 mt-2 rounded-md shadow-md hover:bg-indigo-700 transition text-center">Login Admin</a>
+                        <Link to="/login" className="bg-indigo-600 text-white px-5 py-2 mt-2 rounded-md shadow-md hover:bg-indigo-700 transition text-center">
+                        Login Admin
+                        </Link>
                     </nav>
                 </div>
             )}

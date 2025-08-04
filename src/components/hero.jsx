@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     return(
@@ -14,9 +15,9 @@ const Hero = () => {
             <p className="mt-6 text-indigo-200 text-lg md:text-xl max-w-xl drop-shadow-md">
                 Aplikasi berbasis web untuk membantu panitia dalam memilih calon staff mahasiswa terbaik menggunakan method Weighted Product (WP).
             </p>
-            <a href="#login" className="inline-block mt-10 bg-white text-indigo-700 font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-indigo-50 transition text-lg drop-shadow-md">
-                Masuk ke Halaman Login
-            </a>
+            <Link to="/login" className="inline-block mt-10 bg-white text-indigo-700 font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-indigo-50 transition text-lg drop-shadow-md">
+            Masuk ke Halaman Login
+            </Link>
             </div>
 
             <div className="md:w-1/2 max-w-md mx-auto md:mx-0">
