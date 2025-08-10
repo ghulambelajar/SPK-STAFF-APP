@@ -11,7 +11,7 @@ const Header = () => {
                 <a className="flex item-center space-x-3" href="#">
                     <img alt="Logo SPK"className="w-12 h-12 rounded-md"src="https://storage.googleapis.com/a1aa/image/3487aecf-ad62-4214-9320-18b25d940bca.jpg" />
                     <span className="text-2xl font-bold text-indigo-600 select-none">
-                        Penerimaan Mahasiswa Staff
+                        Penerimaan Staff Mahasiswa
                     </span>
                 </a>
 
